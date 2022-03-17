@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+<body>
+<header class="page-header">
+    <div class="page-header__left-group">
+        <a href="#" class="page-header__logo">
+            <img src="img/logo.svg" alt="Талан" class="page-heeader__logo-img">
+        </a>
+        <div class="page-header__city dropdown js-dropdown">
+            <button type="button" aria-controls="menu-example" class="dropdown__trigger inline-flex items-center page-header__btn page-header__btn--dropdown">Ижевск</button>
+            <ul class="dropdown__menu" id="menu-example">
+                <li><a href="#0" class="dropdown__item">Уфа</a></li>
+                <li><a href="#0" class="dropdown__item">Пермь</a></li>
+                <li><a href="#0" class="dropdown__item">Набережные Челны</a></li>
+                <li><a href="#0" class="dropdown__item">Тюмень</a></li>
+                <li><a href="#0" class="dropdown__item">Хабаровск</a></li>
+                <li><a href="#0" class="dropdown__item">Сочи</a></li>
+                <li><a href="#0" class="dropdown__item">Тверь</a></li>
+                <li><a href="#0" class="dropdown__item">Ханты-Мансийск</a></li>
+                <li><a href="#0" class="dropdown__item">Нижний Новгород</a></li>
+                <li><a href="#0" class="dropdown__item">Новосибирск</a></li>
+                <li><a href="#0" class="dropdown__item">Нижневартовск</a></li>
+                <li><a href="#0" class="dropdown__item">Владивосток</a></li>
+                <li><a href="#0" class="dropdown__item">Севастополь</a></li>
+                <li><a href="#0" class="dropdown__item">Ярославль</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-header__middle-group">
+        <ul class="page-header__nav top-nav">
+            <li class="top-nav__item dropdown js-dropdown">
+                <button type="button" aria-controls="objects-dropdown" class="dropdown__trigger inline-flex items-center page-header__btn page-header__btn--dropdown">Объекты</button>
+                <ul class="dropdown__menu" id="objects-dropdown">
+                    <li><a href="#0" class="dropdown__item">Жилой комплекс «Я ЖИВУ! На Подлесной»</a></li>
+                    <li><a href="#0" class="dropdown__item">Жилой комплекс «Клубный дом на Фруктовой»</a></li>
+                </ul>
+            </li>
+            <li class="top-nav__item dropdown js-dropdown">
+                <button type="button" aria-controls="sections-dropdown" class="dropdown__trigger inline-flex items-center page-header__btn page-header__btn--dropdown">О компании</button>
+
+                <ul class="dropdown__menu" id="sections-dropdown">
+                    <li><a href="#" class="dropdown__item">Контакты</a></li>
+                    <li><a href="#" class="dropdown__item">Команда</a></li>
+                    <li><a href="#" class="dropdown__item">Вакансии</a></li>
+                    <li><a href="#" class="dropdown__item">Миссия компании</a></li>
+                    <li><a href="#" class="dropdown__item">Новости</a></li>
+                    <li><a href="#" class="dropdown__item">Открытые данные</a></li>
+                    <li><a href="#" class="dropdown__item">Карьера</a></li>
+                    <li><a href="#" class="dropdown__item">Талан.журнал</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="page-header__right-group">
+        <div class="page-header__contacts header-phone">
+            <a href="tel:+73412918742" class="header-phone__phone">+ 7 3412 918-742</a>
+            <span class="header-phone__hours">с 9:00 до 19:00</span>
+        </div>
+        <div class="page-header__login">
+            <a href="#" class="page-header__btn page-header__btn--profile">Корзина</a>
+        </div>
+    </div>
+</header>
+
+    <ol class="breadcrumbs">
+        <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Главная</a>
+            <span aria-hidden="true">/</span>
+        </li>
+        <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Квартиры в&nbsp;наличии</a>
+            <span aria-hidden="true">/</span>
+        </li>
+        <li class="breadcrumbs__item">
+            <span aria-current="page">3-комнатная квартира</span>
+        </li>
+    </ol>
+
+
+    <section class="flat-overview">
+        <header class="flat-overview__header">
+            <h1 class="flat-overview__title">3-комнатная квартира Евро+ с 2 гардеробными и мастер-спальней и теплой видовой лаундж-лоджией</h1>
+            <div class="flat-overview__progress">
+                <div class="radial-progress flat-overview__radial-progress">
+                    <div class="radial-progress__text">83%</div>
+                    <svg class="radial-progress__progress" width="50" height="50" viewBox="0 0 50 50">
+                        <circle class="radial-progress__meter" cx="25" cy="25" r="23"/>
+                        <circle class="radial-progress__value" cx="25" cy="25" r="23"  stroke-dashoffset="24.56"/>
+                        <!-- stroke-dashoffset: 2 * 23 * Pi * (1 - 83 / 100)-->
+                    </svg>
+                </div>
+                <span class="flat-overview__progress-label">Октябрь 2020</span>
+            </div>
+        </header>
+        <main class="flat-overview__main">
+            <div class="flat-overview__pictures">
+                <div class="object-pictures">
+                    <div class="tabs js-tabs">
+                        <ul class="tabs__controls js-tabs__controls" aria-label="Tabs Interface">
+                            <li><a href="#tab1Panel1" class="tabs__control--selected js-tab-focus">Планировки</a></li>
+                            <li><a href="#tab1Panel2" class="js-tab-focus">Интерьеры</a></li>
+                        </ul>
+
+                        <div class="tabs__panels js-tabs__panels">
+                            <section id="tab1Panel1" class="tabs__panel tabs__panel--selected js-tabs__panel">
+                                <div class="flat-card-slideshow">
+                                    <div class="peppermint peppermint--inactive flat-card-slideshow__peppermint js-peppermint-flat-layout-slideshow">
+                                        <figure class="flat-card-slideshow__item">
+                                            <img src="img/content/image%2042.png" alt="" class="flat-card-slideshow__slide-image">
+                                        </figure>
+                                        <figure class="flat-card-slideshow__item">
+                                            <img src="img/content/image%2056.png" alt="" class="flat-card-slideshow__slide-image">
+                                        </figure>
+                                    </div>
+
+                                    <ul class="flat-card-slideshow__arrows">
+                                        <li class="flat-card-slideshow__control flat-card-slideshow__control--left">
+                                            <button class="flat-card-slideshow__btn flat-card-slideshow__btn--left js-flat-layout-slideshow-previous-btn">
+                                                <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
+                                            </button>
+                                        </li>
+
+                                        <li class="flat-card-slideshow__control flat-card-slideshow__control--right">
+                                            <button class="flat-card-slideshow__btn flat-card-slideshow__btn--right js-flat-layout-slideshow-next-btn">
+                                                <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+
+                                    <button class="flat-card-slideshow__zoom-btn js-flat-layout-slideshow-zoom-btn" aria-label="Увеличить изображение" data-micromodal-trigger="modal-flat-layout-fullscreen"></button>
+
+                                    <style>
+                                        .flat-card-slideshow .js-peppermint-flat-layout-slideshow ul.peppermint-dots > li:nth-child(1) > span {
+                                            background-image: url('img/content/image 42.png');
+                                        }
+                                        .flat-card-slideshow .js-peppermint-flat-layout-slideshow ul.peppermint-dots > li:nth-child(2) > span {
+                                            background-image: url('img/content/image 56.png');
+                                        }
+                                    </style>
+                                </div>
+                            </section>
+
+                            <section id="tab1Panel2" class="tabs__panel js-tabs__panel">
+
+                                <div class="flat-card-slideshow">
+                                    <div class="peppermint peppermint--inactive flat-card-slideshow__peppermint js-peppermint-flat-interior-slideshow">
+                                        <figure class="flat-card-slideshow__item">
+                                            <img src="img/content/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" class="flat-card-slideshow__slide-image">
+                                        </figure>
+                                        <figure class="flat-card-slideshow__item">
+                                            <img src="img/content/ralph-kayden-JDBVXignFdA-unsplash.jpg" alt="" class="flat-card-slideshow__slide-image">
+                                        </figure>
+                                        <figure class="flat-card-slideshow__item">
+                                            <img src="img/content/christian-mackie-SxBca4GcC9k-unsplash.jpg" alt="" class="flat-card-slideshow__slide-image">
+                                        </figure>
+                                    </div>
+
+                                    <ul class="flat-card-slideshow__arrows">
+                                        <li class="flat-card-slideshow__control flat-card-slideshow__control--left">
+                                            <button class="flat-card-slideshow__btn flat-card-slideshow__btn--left js-flat-interior-slideshow-previous-btn">
+                                                <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
+                                            </button>
+                                        </li>
+
+                                        <li class="flat-card-slideshow__control flat-card-slideshow__control--right">
+                                            <button class="flat-card-slideshow__btn flat-card-slideshow__btn--right js-flat-interior-slideshow-next-btn">
+                                                <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+
+                                    <button class="flat-card-slideshow__zoom-btn js-flat-interior-slideshow-zoom-btn" aria-label="Увеличить изображение" data-micromodal-trigger="modal-flat-interior-fullscreen"></button>
+
+                                    <style>
+                                        .flat-card-slideshow .js-peppermint-flat-interior-slideshow ul.peppermint-dots > li:nth-child(1) > span {
+                                            background-image: url('img/content/aw-creative-VGs8z60yT2c-unsplash.jpg');
+                                        }
+                                        .flat-card-slideshow .js-peppermint-flat-interior-slideshow ul.peppermint-dots > li:nth-child(2) > span {
+                                            background-image: url('img/content/ralph-kayden-JDBVXignFdA-unsplash.jpg');
+                                        }
+                                        .flat-card-slideshow .js-peppermint-flat-interior-slideshow ul.peppermint-dots > li:nth-child(3) > span {
+                                            background-image: url('img/content/christian-mackie-SxBca4GcC9k-unsplash.jpg');
+                                        }
+                                    </style>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flat-overview__description object-description">
+                <p class="object-description__price">
+                    <span class="object-description__price-value">от 2 305 800 ₽</span>
+                    <span class="object-description__price-square">52 468 ₽/м<sup>2</sup></span>
+                </p>
+                <p class="object-description__bookmark">
+                    <a href="#" class="icon-btn icon-btn--like">В&nbsp;избранное</a>
+                    <span class="object-description__bookmark-label">32 человека добавили в&nbsp;избранное</span>
+                </p>
+                <table class="object-description__table">
+                    <tbody class="object-description__table-body">
+                        <tr class="object-description__table-row">
+                            <th class="object-description__table-heading">Комнат:</th>
+                            <td class="object-description__table-value">3</td>
+                        </tr>
+                        <tr class="object-description__table-row">
+                            <th class="object-description__table-heading">Этаж:</th>
+                            <td class="object-description__table-value">14 из 17</td>
+                        </tr>
+                        <tr class="object-description__table-row">
+                            <th class="object-description__table-heading">Общая площадь, м<sup>2</sup>:</th>
+                            <td class="object-description__table-value">46</td>
+                        </tr>
+                        <tr class="object-description__table-row">
+                            <th class="object-description__table-heading">Жилая площадь, м<sup>2</sup>:</th>
+                            <td class="object-description__table-value">72</td>
+                        </tr>
+                        <tr class="object-description__table-row">
+                            <th class="object-description__table-heading">Кухня, м<sup>2</sup>:</th>
+                            <td class="object-description__table-value">14</td>
+                        </tr>
+                        <tr class="object-description__table-row">
+                            <th class="object-description__table-heading">Гостиная, м<sup>2</sup>:</th>
+                            <td class="object-description__table-value">20</td>
+                        </tr>
+                        <tr class="object-description__table-row">
+                            <th class="object-description__table-heading">Спальня, м<sup>2</sup>:</th>
+                            <td class="object-description__table-value">17,2</td>
+                        </tr>
+                        <tr class="object-description__table-row">
+                            <th class="object-description__table-heading">Ванная комната, м<sup>2</sup>:</th>
+                            <td class="object-description__table-value">4</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="object-description__mortgage">
+                    <p class="object-description__mortgage-type">
+                        <span class="object-description__mortgage-type-label">Ипотека:</span>
+                        <span class="object-description__mortgage-type-rate">от 9,2%</span>
+                        <a href="#" class="object-description__mortgage-payment object-description__mortgage-payment--link">20 380 ₽/месяц</a>
+                    </p>
+                    <p class="object-description__mortgage-type">
+                        <span class="object-description__mortgage-type-label">Ипотека:</span>
+                        <span class="object-description__mortgage-type-rate">от 9,2%</span>
+                        <span class="object-description__mortgage-payment">20 380 ₽/месяц</span>
+                    </p>
+                </div>
+
+                <div class="object-description__actions">
+                    <div class="object-description__action">
+                        <a href="#" class="tln-button tln-button--large">Добавить в&nbsp;корзину</a>
+                    </div>
+                </div>
+
+                <div class="object-description__text-content text-content">
+                    <h3>Подробнее о квартире</h3>
+                    <ul>
+                        <li>Просторная мастер-спальня 15 м<sup>2</sup> с собственной простороной гардеробной 2 м<sup>2</sup> и собственной теплой витражной лаундж-лоджией с французским балконом. Высаживайте любимые цветы, наслаждайтесь закатами и заряжайтесь хорошим настроением с самого утра.</li>
+                        <li>Удобное разделение на гостевую и приватную зоны – из коридора мы попадаем прямо в столовую</li>
+                        <li>Парадная гостиная-столовая 18 м<sup>2</sup> с двумя окнами и местом под большой шкаф или домашнюю библиотеку</li>
+                        <li>Просторная ванная комната 5,1 м<sup>2</sup></li>
+                        <li>2 отдельные гардеробные</li>
+                    </ul>
+                </div>
+
+                <div class="object-description__rate-flat rate-flat">
+                    <h3 class="rate-flat__title">Оцените планировку</h3>
+                    <ul class="rate-flat__list">
+                        <li class="rate-flat__item">
+                            <a href="#" class="rate-flat__button rate-flat__button--emo-1"></a>
+                        </li>
+                        <li class="rate-flat__item">
+                            <a href="#" class="rate-flat__button rate-flat__button--emo-2"></a>
+                        </li>
+                        <li class="rate-flat__item">
+                            <a href="#" class="rate-flat__button rate-flat__button--emo-3"></a>
+                        </li>
+                        <li class="rate-flat__item">
+                            <a href="#" class="rate-flat__button rate-flat__button--emo-4"></a>
+                        </li>
+                        <li class="rate-flat__item">
+                            <a href="#" class="rate-flat__button rate-flat__button--emo-5"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="related-flats">
+                    <h3 class="related-flats__title">Похожие квартиры</h3>
+                    <ul class="related-flats__grid">
+                        <li class="related-flats__grid-item">
+                            <div class="flat-mini-card flat-mini-card--popular">
+                                <a href="#" class="flat-mini-card__image">
+                                    <img src="img/content/image%2016.png" alt="" class="flat-mini-card__img">
+                                </a>
+                                <div class="flat-mini-card__description">
+                                    <p class="flat-mini-card__price">
+                                        <a href="#" class="flat-mini-card__price-link">3 640 000 ₽</a>
+                                    </p>
+                                    <ul class="flat-mini-card__list">
+                                        <li class="flat-mini-card__list-item">3-комн.</li>
+                                        <li class="flat-mini-card__list-item">4/14 этаж</li>
+                                        <li class="flat-mini-card__list-item">102 м²</li>
+                                    </ul>
+                                    <p class="flat-mini-card__object">ЖК «Фруктовая»</p>
+                                </div>
+                                <button type="button" title="Добавить в избранное" class="flat-mini-card__fav"></button>
+                            </div>
+                        </li>
+                        <li class="related-flats__grid-item">
+                            <div class="flat-mini-card flat-mini-card--popular">
+                                <a href="#" class="flat-mini-card__image">
+                                    <img src="img/content/image%2016.png" alt="" class="flat-mini-card__img">
+                                </a>
+                                <div class="flat-mini-card__description">
+                                    <p class="flat-mini-card__price">
+                                        <a href="#" class="flat-mini-card__price-link">3 640 000 ₽</a>
+                                    </p>
+                                    <ul class="flat-mini-card__list">
+                                        <li class="flat-mini-card__list-item">3-комн.</li>
+                                        <li class="flat-mini-card__list-item">4/14 этаж</li>
+                                        <li class="flat-mini-card__list-item">102 м²</li>
+                                    </ul>
+                                    <p class="flat-mini-card__object">ЖК «Фруктовая»</p>
+                                </div>
+                                <button type="button" title="Добавить в избранное" class="flat-mini-card__fav"></button>
+                            </div>
+                        </li>
+                        <li class="related-flats__grid-item">
+                            <div class="flat-mini-card flat-mini-card--popular">
+                                <a href="#" class="flat-mini-card__image">
+                                    <img src="img/content/image%2016.png" alt="" class="flat-mini-card__img">
+                                </a>
+                                <div class="flat-mini-card__description">
+                                    <p class="flat-mini-card__price">
+                                        <a href="#" class="flat-mini-card__price-link">3 640 000 ₽</a>
+                                    </p>
+                                    <ul class="flat-mini-card__list">
+                                        <li class="flat-mini-card__list-item">3-комн.</li>
+                                        <li class="flat-mini-card__list-item">4/14 этаж</li>
+                                        <li class="flat-mini-card__list-item">102 м²</li>
+                                    </ul>
+                                    <p class="flat-mini-card__object">ЖК «Фруктовая»</p>
+                                </div>
+                                <button type="button" title="Добавить в избранное" class="flat-mini-card__fav"></button>
+                            </div>
+                        </li>
+                        <li class="related-flats__grid-item">
+                            <div class="flat-mini-card flat-mini-card--popular">
+                                <a href="#" class="flat-mini-card__image">
+                                    <img src="img/content/image%2016.png" alt="" class="flat-mini-card__img">
+                                </a>
+                                <div class="flat-mini-card__description">
+                                    <p class="flat-mini-card__price">
+                                        <a href="#" class="flat-mini-card__price-link">3 640 000 ₽</a>
+                                    </p>
+                                    <ul class="flat-mini-card__list">
+                                        <li class="flat-mini-card__list-item">3-комн.</li>
+                                        <li class="flat-mini-card__list-item">4/14 этаж</li>
+                                        <li class="flat-mini-card__list-item">102 м²</li>
+                                    </ul>
+                                    <p class="flat-mini-card__object">ЖК «Фруктовая»</p>
+                                </div>
+                                <button type="button" title="Добавить в избранное" class="flat-mini-card__fav"></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <div class="callback-promo">
+        <div class="callback-promo__inner">
+            <div class="callback-promo__description">
+                <img src="img/call-center.png" alt="" class="callback-promo__image">
+                <h3 class="callback-promo__title">Нужна консультация?</h3>
+                <p class="callback-promo__paragraph">Оставьте номер телефона&nbsp;&mdash; наши специалисты свяжутся с&nbsp;вами и&nbsp;оперативно ответят на&nbsp;любой вопрос</p>
+            </div>
+            <form action="" class="callback-promo__form">
+                <div class="callback-promo__input">
+                    <label for="callback-form-name" class="visually-hidden">Имя</label>
+                    <input type="text" id="callback-form-name" placeholder="Имя" class="tln-input">
+                </div>
+                <div class="callback-promo__input">
+                    <label for="callback-form-phone" class="visually-hidden">Телефон</label>
+                    <input type="text" id="callback-form-phone" placeholder="Телефон" class="tln-input">
+                </div>
+                <button type="submit" class="tln-button tln-button--small tln-button--dark">Заказать звонок</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="page-footer__inner page-footer__inner--has-border">
+            <div class="page-footer__menu">
+                <div class="page-footer__column page-footer__column--wide page-footer__column--cities">
+                    <h3 class="page-footer__title">Города</h3>
+                    <ul class="footer-menu-list">
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Ижевск</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Уфа</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Пермь</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Набережные Челны</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Тюмень</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Хабаровск</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Сочи</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Тверь</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Ханты-Мансийск</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Нижний Новгород</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Новосибирск</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Нижневартовск</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Владивосток</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Севастополь</a></li>
+                        <li class="footer-menu-list__item"><a href="#" class="footer-menu-list__link footer-link">Ярославль</a></li>
+                    </ul>
+                </div>
+
+                <div class="page-footer__column page-footer__column--narrow page-footer__column--company">
+                    <h3 class="page-footer__title">О&nbsp;компании</h3>
+                    <ul class="footer-menu-list">
+                        <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Контакты</a></li>
+                        <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Команда</a></li>
+                        <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Вакансии</a></li>
+                        <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Миссия компании</a></li>
+                        <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Новости</a></li>
+                        <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Открытые данные</a></li>
+                        <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Карьера</a></li>
+                        <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Талан.журнал</a></li>
+                    </ul>
+                </div>
+
+                <div class="page-footer__column page-footer__column--narrow page-footer__column--partners">
+                    <h3 class="page-footer__title">Партнерам</h3>
+                    <ul class="footer-menu-list">
+                        <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Риелторам</a></li>
+                        <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Владельцам участков</a></li>
+                        <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Тендеры</a></li>
+                        <li class="footer-menu-list__item footer-menu-list__item--full"><a href="#" class="footer-menu-list__link footer-link">Талан.инвест</a></li>
+                    </ul>
+                </div>
+
+                <div class="page-footer__column page-footer__column--narrow page-footer__column--contacts">
+                    <h3 class="page-footer__title">Контакты</h3>
+                    <p class="page-footer__address">
+                        <span class="page-footer__address-label">Отдел продаж:</span> ул. Красноармейская, 86
+                    </p>
+                    <a class="page-footer__phone" href="tel:+73412918742">+ 7 3412 918 742</a>
+                    <p class="page-footer__hours">с 9:00 до 19:00</p>
+                    <button type="button" class="tln-button tln-button--shadow page-footer__cta-btn">Заказать звонок</button>
+                    <ul class="footer-social">
+                        <li class="footer-social__item"><a href="#" class="footer-social__link footer-social__link--instagram"></a></li>
+                        <li class="footer-social__item"><a href="#" class="footer-social__link footer-social__link--ok"></a></li>
+                        <li class="footer-social__item"><a href="#" class="footer-social__link footer-social__link--vk"></a></li>
+                        <li class="footer-social__item"><a href="#" class="footer-social__link footer-social__link--fb"></a></li>
+                    </ul>
+                </div>
+
+                <div class="page-footer__column page-footer__column--narrow page-footer__column--apps">
+                    <h3 class="page-footer__title">Приложение Талан</h3>
+                    <div class="app-buttons">
+                        <a href="#" class="app-buttons__link">
+                            <img class="app-buttons__badge" src="img/app-store-badge.svg" alt="">
+                        </a>
+                        <a href="#" class="app-buttons__link">
+                            <img class="app-buttons__badge" src="img/google-play-badge.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-footer__copy">
+                <div class="page-footer__copy-left">
+                    <p class="page-footer__copy-year">&copy;&nbsp;2019 Талан</p>
+                    <div class="page-footer__legal-link-wrapper">
+                        <a href="#" class="footer-link">Гарантийные замечания</a>
+                    </div>
+                    <div class="page-footer__legal-link-wrapper">
+                        <a href="#" class="footer-link">Соглашение и политика по обработке персональных данных</a>
+                    </div>
+                </div>
+                <div class="page-footer__copy-text">
+                    <p>Обращаем внимание, что настоящий рекламный материал носит исключительно информационный характер и не является публичной офертой, определяемой положениями статьи 437 Гражданского кодекса РФ.<br>Общество с ограниченной ответственностью «ТАЛАН-ФИНАНС» (ОГРН 1117746313739) публикует информацию, подлежащую раскрытию эмитентами эмиссионных ценных бумаг, на странице в сети Интернет, предоставленной распространителем информации на рынке ценных бумаг ООО «Интерфакс-ЦРКИ», аккредитованным ЦБ РФ на раскрытие информации, по адресу: http://www.e-disclosure.ru/portal/company.aspx?id=37631</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal micromodal-slide" id="modal-flat-layout-fullscreen" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <button class="modal__close" aria-label="Закрыть окно" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-flat-layout-fullscreen-content">
+                    <div class="flat-card-slideshow">
+                        <div class="peppermint peppermint--inactive flat-card-slideshow__peppermint js-peppermint-flat-layout-fullscreen-slideshow">
+                            <figure class="flat-card-slideshow__item">
+                                <img src="img/content/image%2042.png" alt="" class="flat-card-slideshow__slide-image">
+                            </figure>
+                            <figure class="flat-card-slideshow__item">
+                                <img src="img/content/image%2056.png" alt="" class="flat-card-slideshow__slide-image">
+                            </figure>
+                        </div>
+
+                        <ul class="flat-card-slideshow__arrows">
+                            <li class="flat-card-slideshow__control flat-card-slideshow__control--left">
+                                <button class="flat-card-slideshow__btn flat-card-slideshow__btn--left js-flat-layout-fullscreen-slideshow-previous-btn">
+                                    <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
+                                </button>
+                            </li>
+
+                            <li class="flat-card-slideshow__control flat-card-slideshow__control--right">
+                                <button class="flat-card-slideshow__btn flat-card-slideshow__btn--right js-flat-layout-fullscreen-slideshow-next-btn">
+                                    <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
+                                </button>
+                            </li>
+                        </ul>
+
+                        <style>
+                            .flat-card-slideshow ul.peppermint-dots > li:nth-child(1) > span {
+                                background-image: url('img/content/image 42.png');
+                            }
+                            .flat-card-slideshow ul.peppermint-dots > li:nth-child(2) > span {
+                                background-image: url('img/content/image 56.png');
+                            }
+                        </style>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-flat-interior-fullscreen" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                    <button class="modal__close" aria-label="Закрыть окно" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-flat-interior-fullscreen-content">
+                    <div class="flat-card-slideshow">
+                        <div class="peppermint peppermint--inactive flat-card-slideshow__peppermint js-peppermint-flat-interior-fullscreen-slideshow">
+                            <figure class="flat-card-slideshow__item">
+                                <img src="img/content/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" class="flat-card-slideshow__slide-image">
+                            </figure>
+                            <figure class="flat-card-slideshow__item">
+                                <img src="img/content/ralph-kayden-JDBVXignFdA-unsplash.jpg" alt="" class="flat-card-slideshow__slide-image">
+                            </figure>
+                            <figure class="flat-card-slideshow__item">
+                                <img src="img/content/christian-mackie-SxBca4GcC9k-unsplash.jpg" alt="" class="flat-card-slideshow__slide-image">
+                            </figure>
+                        </div>
+
+                        <ul class="flat-card-slideshow__arrows">
+                            <li class="flat-card-slideshow__control flat-card-slideshow__control--left">
+                                <button class="flat-card-slideshow__btn flat-card-slideshow__btn--left js-flat-interior-fullscreen-slideshow-previous-btn">
+                                    <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
+                                </button>
+                            </li>
+
+                            <li class="flat-card-slideshow__control flat-card-slideshow__control--right">
+                                <button class="flat-card-slideshow__btn flat-card-slideshow__btn--right js-flat-interior-fullscreen-slideshow-next-btn">
+                                    <svg width="13" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Show previous slide</title><path d="M12 1L2 16l10 15" stroke="#fff" stroke-width="2"/></svg>
+                                </button>
+                            </li>
+                        </ul>
+
+                        <style>
+                            .flat-card-slideshow ul.peppermint-dots > li:nth-child(1) > span {
+                                background-image: url('img/content/aw-creative-VGs8z60yT2c-unsplash.jpg');
+                            }
+                            .flat-card-slideshow ul.peppermint-dots > li:nth-child(2) > span {
+                                background-image: url('img/content/ralph-kayden-JDBVXignFdA-unsplash.jpg');
+                            }
+                            .flat-card-slideshow ul.peppermint-dots > li:nth-child(3) > span {
+                                background-image: url('img/content/christian-mackie-SxBca4GcC9k-unsplash.jpg');
+                            }
+                        </style>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/micromodal.min.js"></script>
+    <script src="js/peppermint.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
