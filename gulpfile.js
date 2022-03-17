@@ -98,13 +98,13 @@ gulp.task("server", function() {
             baseDir: './build'
         },
         notify: false,
-        open: true,
+        open: false,
         cors: true,
         ui: false
     });
 
     gulp.watch("src/sass/**/*.sass", gulp.series("css"));
-    gulp.watch("src/*.html").on("change", server.reload);
+    gulp.watch("src/*.html", gulp.series("html")).on("change", server.reload);
 });
 
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"))
