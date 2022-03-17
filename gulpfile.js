@@ -103,7 +103,7 @@ gulp.task("server", function() {
         ui: false
     });
 
-    gulp.watch("src/sass/**/*.sass", gulp.series("css"));
+    gulp.watch("src/scss/**/*.scss", gulp.series("css"));
     gulp.watch("src/*.html", gulp.series("html")).on("change", server.reload);
 });
 
