@@ -94,7 +94,9 @@ gulp.task("sprite", function() {
 
 gulp.task("server", function() {
     server.init({
-        server: "src/",
+        server: {
+            baseDir: './build'
+        },
         notify: false,
         open: true,
         cors: true,
