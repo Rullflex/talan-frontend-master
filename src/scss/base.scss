@@ -20,6 +20,14 @@ html {
 @font-face {
   font-family: 'Stolzl';
   font-display: swap;
+  font-weight: 400;
+  src: url('../fonts/Stolzl-Regular.woff2') format('woff2'),
+       url('../fonts/Stolzl-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Stolzl';
+  font-display: swap;
   font-weight: 500;
   src: url('../fonts/Stolzl-Medium.woff2') format('woff2'),
        url('../fonts/Stolzl-Medium.woff') format('woff');
