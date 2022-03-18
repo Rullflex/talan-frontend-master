@@ -815,7 +815,64 @@
     <button data-micromodal-trigger="modal-request-2">modal-request-2</button>
     <button data-micromodal-trigger="modal-login">modal-login</button>
     <button data-micromodal-trigger="modal-login-confirmation">modal-login-confirmation</button>
+    <button data-micromodal-trigger="modal-promo-buy-flat-3+">modal-promo-buy-flat-3+</button>
 
+    <div class="modal-promo modal micromodal-slide" id="modal-promo-buy-flat-3+" aria-hidden="true">
+        <div class="modal-promo__overlay modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal-promo__container modal__container" role="dialog" aria-modal="true">
+                <button class="modal__close" aria-label="Закрыть окно" data-micromodal-close></button>
+
+                <div class="modal-promo__content">
+                    <div class="modal-promo__image-container">
+                        <img src="img/modal_promo_buy_flat.jpg" alt="" class="modal-promo__image">
+                    </div>
+
+                    <div class="modal-promo__main">
+                        <h2 class="modal-promo__title">Успейте оставить заявку, чтобы получить подарок!</h2>
+
+                        <div class="modal-promo__timer promo-timer">
+                            <p class="promo-timer__label">До окончания акции осталось:</p>
+
+                            <div class="promo-timer__countdown">
+                                <div class="promo-timer__unit-block">
+                                    <span class="promo-timer__unit" data-timer-unit="days">00</span>
+                                </div>
+
+                                <div class="promo-timer__unit-separator"></div>
+
+                                <div class="promo-timer__unit-block">
+                                    <span class="promo-timer__unit" data-timer-unit="hours">00</span>
+                                </div>
+
+                                <div class="promo-timer__unit-separator"></div>
+
+                                <div class="promo-timer__unit-block">
+                                    <span class="promo-timer__unit" data-timer-unit="minutes">00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form action="" class="modal-promo__form">
+                            <p class="modal-promo__form-row">
+                                <input type="text" class="tln-input tln-input--light-border" placeholder="Имя">
+                            </p>
+                            <p class="modal-promo__form-row">
+                                <input type="text" class="tln-input tln-input--light-border" placeholder="Телефон">
+                            </p>
+                            <div class="modal-promo__form-row">
+                                <button type="submit" class="modal-promo__submit-button tln-button tln-button--small">Оставить заявку</button>
+                            </div>
+                            <p class="modal-promo__form-row modal-promo__form-row--consent">
+                                <input type="checkbox" class="form-request__checkbox" id="form-request-consent-1" checked>
+                                <label class="form-request__custom-checkbox" for="form-request-consent-1"></label>
+                                <span class="form-request__checkbox-label">Даю <a href="#">согласие</a> на обработку моих персональных данных, с <a href="#">условиями политики</a> ознакомлен</span>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
@@ -1420,7 +1477,36 @@
     <script src="js/scrollnav.min.umd.js"></script>
     <script src="js/peppermint.min.js"></script>
     <script src="js/siema.min.js"></script>
+    <script src="js/countdown.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        // Countdown for promo timer
+        // http://countdownjs.org/readme.html
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const expirationDate = new Date('2022-04-18');
+
+            const timestamp = countdown(expirationDate, null, countdown.DAYS|countdown.HOURS|countdown.MINUTES);
+
+            // reset the timer if expirationDate is lower than actual date
+            if (timestamp.value > 0) {
+                updateTimerNode(null);
+                return;
+            }
+
+            updateTimerNode([timestamp.days, timestamp.hours, timestamp.minutes]);
+
+            function padWithZeros(number) {
+                return ('00' + number).slice(-2);
+            }
+
+            function updateTimerNode(units) {
+                document.querySelectorAll('.modal-promo__timer [data-timer-unit]').forEach(function(unitNode, index) {
+                    unitNode.textContent = units ? padWithZeros(units[index] || 0)  : '00';
+                })
+            }
+        })
+    </script>
     <script>
 
             const content = document.querySelector('.sticky-nav-wrapper');
